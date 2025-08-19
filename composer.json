@@ -1,5 +1,5 @@
 {
-  "name": "acme/yii2-user-module",
+  "name": "omaicobuss/yii2-user-module",
   "description": "Módulo Yii2 para gerenciamento de usuários reutilizável.",
   "type": "library",
   "require": {
@@ -20,9 +20,19 @@
   },
   "minimum-stability": "stable",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Omaico Buss",
+      "email": "omaicobuss@gmail.com",
+      "homepage": "https://github.com/omaicobuss"
+    }
+  ],
   "config": {
     "allow-plugins": {
       "yiisoft/yii2-composer": true
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
   }
 }

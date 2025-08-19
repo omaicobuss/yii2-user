@@ -1,6 +1,10 @@
-# yii2-user-module
+# omaicobuss/yii2-user-module
+
 
 Módulo Yii2 para gerenciamento de usuários reutilizável em múltiplas aplicações.
+
+Repositório: https://github.com/omaicobuss/yii2-user
+Autor: Maico Oliveira Buss
 
 ## Funcionalidades
 - Registro, autorização, recuperação de senha, alteração de e-mail
@@ -15,9 +19,9 @@ Módulo Yii2 para gerenciamento de usuários reutilizável em múltiplas aplica�
 
 ## Instalação
 1. Adicione o módulo ao seu projeto via Composer:
-   ```sh
-   composer require acme/yii2-user-module
-   ```
+  ```sh
+  composer require omaicobuss/yii2-user-module
+  ```
 2. Certifique-se de que as dependências do Yii2 e Bootstrap 5 estejam instaladas.
 
 ## Estrutura do Módulo
@@ -57,8 +61,27 @@ Inclua o módulo na configuração da sua aplicação Yii2:
 ],
 ```
 
-## Testes
-Implemente testes conforme a necessidade da aplicação integradora.
+## Como testar o módulo
+
+1. Clone este repositório ou adicione como dependência Composer em uma aplicação Yii2:
+  ```sh
+  composer require omaicobuss/yii2-user-module
+  ```
+2. Adicione o módulo à configuração da sua aplicação (exemplo em `config/web.php`):
+  ```php
+  'modules' => [
+     'user' => [
+        'class' => 'app\\modules\\user\\Module',
+     ],
+  ],
+  ```
+3. Execute as migrations do módulo, se houver, usando o comando:
+  ```sh
+  php yii migrate --migrationPath=@app/modules/user/migrations
+  ```
+4. Acesse as rotas do módulo (exemplo: `/user/auth/login`, `/user/admin/index`).
+
+Para testes automatizados, implemente testes PHPUnit conforme a necessidade da aplicação integradora.
 
 ## Licença
-MIT
+MIT (consulte o arquivo LICENSE)

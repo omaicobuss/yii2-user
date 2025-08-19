@@ -12,4 +12,6 @@ return array(
     'yidas\\yii2BowerAsset\\' => array($vendorDir . '/yidas/yii2-bower-asset'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'app\\modules\\user\\' => array($baseDir . '/src'),
+    'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );
