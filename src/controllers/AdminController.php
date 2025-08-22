@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\user\controllers;
+namespace omaicobuss\user\controllers;
 
 use yii\web\Controller;
 

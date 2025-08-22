@@ -1,21 +1,14 @@
 {
   "name": "omaicobuss/yii2-user-module",
   "description": "Módulo Yii2 para gerenciamento de usuários reutilizável.",
-  "type": "library",
+  "type": "yii2-extension",
   "require": {
-    "yiisoft/yii2": "^2.0",
-    "yiisoft/yii2-bootstrap5": "^2.0",
-    "yidas/yii2-bower-asset": "^2.0"
+    "yiisoft/yii2": "~2.0.45",
+    "yiisoft/yii2-bootstrap5": "~2.0.2"
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
-    }
-  ],
   "autoload": {
     "psr-4": {
-      "app\\modules\\user\\": "src/"
+  "omaicobuss\\user\\": "src/"
     }
   },
   "minimum-stability": "stable",

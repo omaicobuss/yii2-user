@@ -1,11 +1,11 @@
 <?php
-namespace app\modules\user;
+namespace omaicobuss\user;
 
 use yii\base\Module as BaseModule;
 
 class Module extends BaseModule
 {
-    public $controllerNamespace = 'app\\modules\\user\\controllers';
+    public $controllerNamespace = 'omaicobuss\\user\\controllers';
     public function init()
     {
         parent::init();

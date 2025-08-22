@@ -20,13 +20,13 @@ class ComposerStaticInit6d7435248f404314c3540790b7acae81
             'yii\\' => 4,
             'yidas\\yii2BowerAsset\\' => 21,
         ),
+        'o' => 
+        array (
+            'omaicobuss\\user\\' => 16,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
-        ),
-        'a' => 
-        array (
-            'app\\modules\\user\\' => 17,
         ),
         'P' => 
         array (
@@ -55,13 +55,13 @@ class ComposerStaticInit6d7435248f404314c3540790b7acae81
         array (
             0 => __DIR__ . '/..' . '/yidas/yii2-bower-asset',
         ),
+        'omaicobuss\\user\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
-        ),
-        'app\\modules\\user\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'PhpParser\\' => 
         array (

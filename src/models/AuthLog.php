@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\user\models;
+namespace omaicobuss\user\models;
 
 use yii\db\ActiveRecord;
 
