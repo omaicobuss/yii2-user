@@ -1,14 +1,15 @@
 <?php
-namespace omaicobuss\user\controllers;
+namespace app\modules\user\controllers;
 
 use yii\web\Controller;
+use app\modules\user\models\User;
 
 class AuthController extends Controller
 {
     public function actionLogin()
     {
         // Exemplo de lógica de login
-        $model = new \omaicobuss\user\models\User();
+        $model = new User();
         if (\Yii::$app->request->isPost && $model->load(\Yii::$app->request->post())) {
             // Autenticação simplificada
             $user = $model::findOne(['username' => $model->username]);
@@ -22,7 +23,7 @@ class AuthController extends Controller
 
     public function actionRegister()
     {
-        $model = new \omaicobuss\user\models\User();
+        $model = new User();
         if (\Yii::$app->request->isPost && $model->load(\Yii::$app->request->post())) {
             $model->password_hash = \Yii::$app->security->generatePasswordHash($model->password);
             if ($model->save()) {
@@ -35,14 +36,14 @@ class AuthController extends Controller
     public function actionRequestPasswordReset()
     {
         // Exemplo: renderiza view de solicitação de reset
-        $model = new \omaicobuss\user\models\User();
+        $model = new User();
         return $this->render('requestPasswordReset', ['model' => $model]);
     }
 
     public function actionResetPassword($token)
     {
         // Exemplo: renderiza view de redefinição
-        $model = new \omaicobuss\user\models\User();
+        $model = new User();
         return $this->render('resetPassword', ['model' => $model]);
     }
 }

@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+
 $this->title = Yii::t('user', 'Feliz Aniversário!');
 ?>
 <div class="container py-5 d-flex justify-content-center align-items-center min-vh-100">
